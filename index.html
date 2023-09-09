@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Student List Data Assignment</h1>
+        <h4 id="tS"></h4>
+    <hr>
+        <div class="inputs">
+        <input type="text" id="stdFirstName" class="inp" placeholder="Enter Your First Name">
+        <input type="text" id="stdLastName" class="inp" placeholder="Enter Your Last Name">
+        <input type="number" id="stdAge" class="inp" placeholder="Enter Your Age">
+        <input type="text" id="stdEdu" class="inp" placeholder="Enter Your Education">
+        <input type="text" id="stdId" class="inp" placeholder="Enter Your Id">
+        <button onclick="addStudent()" class="inp-btn">Add Student</button>
+        <button onclick="deleteAll()" class="inp-btn">Delete All</button>
+        </div>
+        
+        <div class="main2">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Qualification</th>
+                    <th>ID</th>
+                    <th>For Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tBody">
+                
+            </tbody>
+            <tfoot>
+                
+            </tfoot>
+        </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
